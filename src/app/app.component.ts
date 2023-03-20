@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'A_Vaddoriya_WEB601Assignment_MyFavouriteAvenger';
+  imagePath = '/A_Vaddoriya_WEB601Assignment_MyFavouriteAvenger/img/avengers-png-logo-4979.png'
 }
