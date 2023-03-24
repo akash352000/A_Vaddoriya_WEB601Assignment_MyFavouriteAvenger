@@ -1,5 +1,7 @@
+import { Content } from "./content-interface";
+
 export class ContentList {
-    private content!: Array<Content>;
+     content!: Array<Content>;
     constructor(con? : any){
         this.content = [];
     }

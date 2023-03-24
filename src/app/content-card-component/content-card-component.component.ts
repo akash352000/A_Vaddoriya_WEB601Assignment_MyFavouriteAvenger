@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ContentList } from '../helper-files/content-list';
+import { Component, Input, OnInit } from '@angular/core';
+import { Content } from '../helper-files/content-interface'
 
 
 @Component({  
@@ -7,13 +7,16 @@ import { ContentList } from '../helper-files/content-list';
   templateUrl: './content-card-component.component.html',
   styleUrls: ['./content-card-component.component.css']
 })
-export class ContentCardComponentComponent {
-   contList: Array<Content>;
+export class ContentCardComponentComponent implements OnInit {
+  contList: Array<Content>;
   conts: any;
-
+  @Input() imgPath = "";
   constructor(message: Array<Content>){
     this.contList = message; 
     var imagePath ="./assets/3-2-thor-transparent.png";
+  }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
 
   ContentList(){
@@ -35,4 +38,4 @@ export class ContentCardComponentComponent {
     this.contList.push(this.conts);
      return this.contList; 
   }
-}
+  }

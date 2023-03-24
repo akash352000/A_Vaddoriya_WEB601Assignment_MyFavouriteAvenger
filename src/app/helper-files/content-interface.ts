@@ -1,4 +1,4 @@
-interface Content{
+export interface Content{
     id: number,
     name: string,
     discription: string,
