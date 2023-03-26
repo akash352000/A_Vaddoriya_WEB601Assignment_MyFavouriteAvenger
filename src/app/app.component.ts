@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostBinding, HostListener, Input, OnInit } from '@angular/core';
 import { ContentCardComponentComponent } from './content-card-component/content-card-component.component';
 import { Content } from './helper-files/content-interface';
 
@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     
   }
+  
   constructor(){
     var imagePath ="./assets/3-2-thor-transparent.png";
     const content = Array<Content>();
@@ -34,3 +35,7 @@ export class AppComponent implements OnInit {
     this.contentExist = true;
   }
 }
+function Directives(arg0: {}) {
+  throw new Error('Function not implemented.');
+}
+

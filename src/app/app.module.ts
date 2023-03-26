@@ -5,11 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentCardComponentComponent } from './content-card-component/content-card-component.component';
+import { HoverAffectDirectiveDirective } from './hover-affect-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContentCardComponentComponent
+    ContentCardComponentComponent,
+    HoverAffectDirectiveDirective
   ],
   imports: [
     BrowserModule,
