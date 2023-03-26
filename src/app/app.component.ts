@@ -13,9 +13,15 @@ export class AppComponent implements OnInit {
     
   }
   
+  tags = [
+    { name: 'Loki', hover: false },
+    { name: 'Sif', hover: false },
+    { name: 'Yondu', hover: false }
+  ];
   constructor(){
     var imagePath ="./assets/3-2-thor-transparent.png";
     const content = Array<Content>();
+    const isHovered = false;
   }
   
   title = 'A_Vaddoriya_WEB601Assignment_MyFavouriteAvenger';
@@ -25,6 +31,7 @@ export class AppComponent implements OnInit {
   public disc = "1500" ;
   public searchItem = "";
   contentExist : boolean = false;
+  
   
  contentList  (params:Array<Content>) {
     this.contList.id = 101;

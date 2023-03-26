@@ -381,5 +381,14 @@
         Content item not found with title "{{ searchItem }}"
       </div>
     </ng-template>
+    <div>
+      <p>Hover over these tags:</p>
+    <ul>
+      <li *ngFor="let tag of tags" [ngStyle]="{'font-weight': tag.hover ? 'bold' : 'normal'}"
+        (mouseover)="tag.hover = true" (mouseout)="tag.hover = false">
+        {{ tag.name }}
+      </li>
+    </ul>
+    </div>
   </div>
 </div>
