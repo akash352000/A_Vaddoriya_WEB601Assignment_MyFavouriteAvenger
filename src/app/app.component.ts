@@ -31,7 +31,8 @@ export class AppComponent implements OnInit {
   public disc = "1500" ;
   public searchItem = "";
   contentExist : boolean = false;
-  
+  content: Array<Content> = [];
+
   
  contentList  (params:Array<Content>) {
     this.contList.id = 101;
@@ -41,6 +42,12 @@ export class AppComponent implements OnInit {
   search(){
     this.contentExist = true;
   }
+  OnSubmit(id: any,name: any,power: any){
+    this.content.push(id.value,name.value,power.value);
+    id.value ="";
+    name.value ="";
+    power.value="";
+    }
 }
 function Directives(arg0: {}) {
   throw new Error('Function not implemented.');

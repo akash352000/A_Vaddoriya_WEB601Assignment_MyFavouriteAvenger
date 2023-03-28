@@ -1,6 +1,6 @@
 {
   "name": "a-vaddoriya-web601-assignment-my-favourite-avenger",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
