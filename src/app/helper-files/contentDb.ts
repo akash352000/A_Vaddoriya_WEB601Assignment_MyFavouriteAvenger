@@ -9,5 +9,4 @@ export class contentDb {
    public get contents(){
        return this.content;
    }
-   
 }

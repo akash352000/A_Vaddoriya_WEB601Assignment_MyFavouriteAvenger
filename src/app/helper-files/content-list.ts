@@ -1,6 +1,9 @@
 import { Content } from "./content-interface";
 
 export class ContentList {
+    static find(arg0: (content: any) => boolean): any {
+        throw new Error("Method not implemented.");
+    }
      content!: Array<Content>;
     constructor(con? : any){
         this.content = [];

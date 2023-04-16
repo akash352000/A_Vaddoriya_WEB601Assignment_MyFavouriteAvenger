@@ -1,6 +1,7 @@
 import { Component, HostBinding, HostListener, Input, OnInit } from '@angular/core';
 import { ContentCardComponentComponent } from './content-card-component/content-card-component.component';
 import { Content } from './helper-files/content-interface';
+import { AvengerService } from './helper-files/AvengerService';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,8 @@ import { Content } from './helper-files/content-interface';
   
 })
 export class AppComponent implements OnInit {
+  contents!: Content[];
+  topContent!: Content;
   ngOnInit(): void {
     
   }
@@ -52,4 +55,3 @@ export class AppComponent implements OnInit {
 function Directives(arg0: {}) {
   throw new Error('Function not implemented.');
 }
-
