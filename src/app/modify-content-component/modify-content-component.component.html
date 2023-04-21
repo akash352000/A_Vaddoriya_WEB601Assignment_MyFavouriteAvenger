@@ -1,0 +1,31 @@
+<div>
+    <label for="id">ID: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="id" #id/>
+  </div>
+  <div>
+    <label for="name" >Name: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="name"  #name/>&nbsp;
+  </div>
+  <div>
+    <label for="discription">Discription: </label>
+    <input type="text" id="discription" #discription/>&nbsp;
+  </div>
+  <div>
+    <label for="creator">Creator: </label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="creator" #creator/>&nbsp;
+  </div>
+  <div>
+    <label for="imgURL">Image URL: </label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="imgURL"  #imgURL/>&nbsp;
+  </div>
+  <div>
+    <label for="type">Type: </label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="type"  #type/>&nbsp;
+  </div>
+  <div>
+    <label for="tags">Tags: </label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="tags" #tags/>&nbsp;
+  </div>
+  <div>
+    <button type="submit" (click) ="addContent(id,name,discription,creator,imgURL,type,tags)" > Add Content </button>
+  </div> <br/>
