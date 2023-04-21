@@ -12,8 +12,6 @@ export class MessageComponentComponent {
     
   }
   constructor(private messageServices: MessageService){
-    this.messageServices.getMessages.subscribe((message: string) => {
-        this.messages.push(message);
-    })
+   
   }
 }
