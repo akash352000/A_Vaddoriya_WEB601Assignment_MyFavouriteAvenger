@@ -11,6 +11,8 @@ import { MatButtonModule} from '@angular/material/button';
 import { ModifyContentComponentComponent } from './modify-content-component/modify-content-component.component';
 import { DialogBoxComponentComponent } from './modify-content-component/dialog-box-component/dialog-box-component.component';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { ContentDetailsComponentComponent } from './content-details-component/content-details-component.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,12 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
     CreateContentComponentComponent,
     MessageComponentComponent,
     ModifyContentComponentComponent,
-    DialogBoxComponentComponent
+    DialogBoxComponentComponent,
+    ContentDetailsComponentComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
     MatButtonModule,

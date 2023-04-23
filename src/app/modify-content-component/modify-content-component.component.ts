@@ -19,6 +19,7 @@ export class ModifyContentComponentComponent {
   openDialog(): void{
     this.dialog.open(DialogBoxComponentComponent,{
       data:{
+        panelClass: 'dialog-container',
         message: "hey"
       }
     });
