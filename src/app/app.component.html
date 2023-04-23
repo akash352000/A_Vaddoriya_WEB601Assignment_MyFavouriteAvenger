@@ -365,7 +365,9 @@
       <label for="power"> Description : </label>
       <h3> Thor is {{disc | number}} or more than years old!! </h3>
       <h3 for="type" class="type" appHoverAffectDirective> Son of the Odin</h3>
-      
+      <div class="container">    
+        <app-modify-content-component></app-modify-content-component>
+      </div>
       </div>
     </div>
   </div>
@@ -375,7 +377,7 @@
     </app-modify-content-component> -->
     
     <input type="text" [(ngModel)] = "searchItem">
-    <button type="submit" (click) ="search()">Submit</button>
+    <button type="submit" (click) ="search()"  mat-raised-button>Submit</button>
     <div *ngIf = "contentExist; else notFound" [ngStyle] ="{ color : 'green' }" >
       Content item exists with title "{{ searchItem }}"
     </div>
@@ -407,7 +409,7 @@
       <label for="power">Power: </label>
       <input type="text" id="power" #power/>&nbsp;
     </div>
-    <button type="submit" (click)="OnSubmit(id,name,power)" > Submit </button>
+    <button type="submit" (click)="OnSubmit(id,name,power)" mat-raised-button> Submit </button>
     <table>
       <thead>
         <tr>
@@ -420,11 +422,5 @@
         </tr>
       </tbody>
     </table>
-    <div class="container">
-      <!-- <app-content-card-component *ngIf="topContent" [content]="topContent" [boxShadow]="true"></app-content-card-component>
-      <app-content-card-component *ngFor="let content of contents" [content]="content"></app-content-card-component> -->
-      <app-message-component></app-message-component>
-    </div>
-
   </div>
 </div>

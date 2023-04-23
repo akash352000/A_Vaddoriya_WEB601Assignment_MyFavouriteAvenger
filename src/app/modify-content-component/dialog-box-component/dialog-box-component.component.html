@@ -1,0 +1,33 @@
+<div class="dialog-header">
+    <h3 class="header-text">Add Avenger</h3>
+</div>
+<div>
+    <div class="id-disable">
+      <label for="id">ID: </label> 
+      <input type="text" id="id" #id/>
+    </div>
+    <div>
+      <label for="name" >Name: </label>
+      <input type="text" id="name" #name/>&nbsp;
+    </div>
+    <div>
+      <label for="power">Power: </label>
+      <input type="text" id="power" #power/>&nbsp;
+    </div>
+    <button type="submit" (click)="OnSubmit(id,name,power)" mat-raised-button> Submit </button>
+    <table>
+      <thead>
+        <tr>
+        <h1>Array's Data</h1>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of content"> 
+          <td>{{i}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button mat-raised-button (click)="closeBtn()">Close</button>
+
+
