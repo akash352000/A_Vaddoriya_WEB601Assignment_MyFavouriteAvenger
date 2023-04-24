@@ -1,9 +1,9 @@
 {
   "name": "a-vaddoriya-web601-assignment-my-favourite-avenger",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "http-server -p 8080 -c-1 dist/AkashVaddoriyaAvenger",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "@angular/service-worker": "^15.2.1",
     "ngx-bootstrap": "^10.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

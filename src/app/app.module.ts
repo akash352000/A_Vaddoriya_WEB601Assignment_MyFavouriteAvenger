@@ -13,6 +13,7 @@ import { DialogBoxComponentComponent } from './modify-content-component/dialog-b
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ContentDetailsComponentComponent } from './content-details-component/content-details-component.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
